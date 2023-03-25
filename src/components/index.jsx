@@ -1,7 +1,6 @@
 import Header from "./Header";
-import Menu from "./Menu";
-import Banner from "./Banner";
+import Main from "./Main";
 import Footer from "./Footer";
 import Gallery from "./Gallery";
 
-export { Header, Menu, Banner, Footer, Gallery };
+export { Header, Main, Footer, Gallery };
