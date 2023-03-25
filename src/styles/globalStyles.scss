@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {
 @font-face {
   font-family: $fonte-normal;
   src: local($fonte-normal),
-    url("../assets/fonts/GandhiSans-Regular.otf") format("truetype");
+    url("/assets/fonts/GandhiSans-Regular.otf") format("truetype");
   font-weight: 500;
   font-display: swap;
 }
@@ -38,7 +38,7 @@ body::-webkit-scrollbar-thumb {
 @font-face {
   font-family: $fonte-bold;
   src: local($fonte-bold),
-    url("../assets/fonts/GandhiSans-Bold.otf") format("truetype");
+    url("/assets/fonts/GandhiSans-Bold.otf") format("truetype");
   font-weight: 700;
   font-display: swap;
 }
