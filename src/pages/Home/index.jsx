@@ -1,4 +1,4 @@
-import { Header, Main, Gallery, Footer } from "../../components";
+import { Header, Main, Gallery, Footer, Popular } from "../../components";
 import styles from "./home.module.scss";
 
 const Home = () => {
@@ -6,9 +6,6 @@ const Home = () => {
     <>
       <Header />
       <Main />
-      <div className={styles.gallery}>
-        <Gallery />
-      </div>
       <Footer />
     </>
   );
