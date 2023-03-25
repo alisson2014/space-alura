@@ -1,10 +1,16 @@
-import { Header, Menu } from "../../components";
+import { Header, Menu, Banner } from "../../components";
+import styles from "./home.module.scss";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <Menu />
+      <main>
+        <section className={styles.main}>
+          <Menu />
+          <Banner />
+        </section>
+      </main>
     </>
   );
 };
