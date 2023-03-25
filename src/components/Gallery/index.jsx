@@ -1,8 +1,7 @@
 import styles from "./gallery.module.scss";
 import Tags from "../Tags";
 import photos from "./photos.json";
-import open from "./open.png";
-import favorite from "./favorito.png";
+import Card from "../Card";
 
 const Gallery = () => {
   return (
@@ -12,22 +11,12 @@ const Gallery = () => {
       <ul className={styles.gallery__cards}>
         {photos.map((photo) => {
           return (
-            <li key={photo.id} className={styles.gallery__card}>
-              <img
-                className={styles.gallery__image}
-                src={photo.image}
-                alt={photo.title}
-                title={photo.title}
-              />
-              <p className={styles.gallery__desc}>{photo.title}</p>
-              <div>
-                <p>{photo.credits}</p>
-                <span>
-                  <img src={favorite} alt="icone corção curtir" />
-                  <img src={open} alt="icone de abrir modal" />
-                </span>
-              </div>
-            </li>
+            <Card
+              key={photo.id}
+              image={photo.image}
+              title={photo.title}
+              credits={photo.credits}
+            />
           );
         })}
       </ul>
