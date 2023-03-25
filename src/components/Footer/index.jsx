@@ -1,13 +1,20 @@
 import styles from "./footer.module.scss";
-import { facebook, instagram, twitter } from "../../assets";
+import socialIcon from "./social.json";
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header__social}>
-        <img src={facebook} alt="facebook" />
-        <img src={twitter} alt="twitter" />
-        <img src={instagram} alt="instagram" />
+        {socialIcon.map((icon) => {
+          return (
+            <img
+              key={icon.id}
+              src={icon.image}
+              alt={icon.name}
+              title={icon.name}
+            />
+          );
+        })}
       </div>
       <p>Desenvolvido por Alisson</p>
     </header>
