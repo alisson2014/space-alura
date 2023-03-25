@@ -1,7 +1,12 @@
-import { Header } from "../../components";
+import { Header, Menu } from "../../components";
 
 const Home = () => {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <Menu />
+    </>
+  );
 };
 
 export default Home;

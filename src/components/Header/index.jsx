@@ -1,4 +1,4 @@
-import { logo, search } from "./assets";
+import { logo, search } from "./images";
 import styles from "./header.module.scss";
 
 const Header = () => {
