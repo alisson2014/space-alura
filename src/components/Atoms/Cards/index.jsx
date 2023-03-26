@@ -5,7 +5,14 @@ const Cards = ({ items }) => {
   return (
     <ul className={styles.cards}>
       {items.map((item) => {
-        return <Card {...item} />;
+        return (
+          <Card
+            key={item.id}
+            image={item.image}
+            title={item.title}
+            credits={item.credits}
+          />
+        );
       })}
     </ul>
   );
