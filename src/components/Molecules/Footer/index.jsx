@@ -1,10 +1,10 @@
 import styles from "./footer.module.scss";
 import socialIcon from "./social.json";
 
-const Header = () => {
+const Footer = () => {
   return (
-    <header className={styles.header}>
-      <div className={styles.header__social}>
+    <footer className={styles.footer}>
+      <div className={styles.footer__social}>
         {socialIcon.map((icon) => {
           return (
             <img
@@ -17,8 +17,8 @@ const Header = () => {
         })}
       </div>
       <p>Desenvolvido por Alisson</p>
-    </header>
+    </footer>
   );
 };
 
-export default Header;
+export default Footer;
