@@ -1,5 +1,5 @@
 import styles from "./tags.module.scss";
-import photos from "../Gallery/photos.json";
+import photos from "../../Atoms/Gallery/photos.json";
 
 const Tags = ({ tags, filtered, setItems }) => {
   return (
