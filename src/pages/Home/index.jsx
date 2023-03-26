@@ -1,5 +1,4 @@
-import { Header, Main, Gallery, Footer, Popular } from "../../components";
-import styles from "./home.module.scss";
+import { Header, Main, Footer } from "../../components";
 
 const Home = () => {
   return (

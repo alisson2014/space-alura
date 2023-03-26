@@ -11,10 +11,10 @@ const Main = () => {
         <Menu />
         <Banner />
       </section>
-      <div className={styles.gallery}>
+      <section className={styles.gallery}>
         <Gallery />
         <Popular />
-      </div>
+      </section>
     </main>
   );
 };
