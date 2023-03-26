@@ -1,8 +1,5 @@
+import { Menu, Banner, Gallery, Popular } from "../../Atoms";
 import styles from "./main.module.scss";
-import Menu from "../../Atoms/Menu";
-import Banner from "../../Atoms/Banner";
-import Gallery from "../../Atoms/Gallery";
-import Popular from "../../Atoms/Popular";
 
 const Main = () => {
   return (
