@@ -1,6 +1,5 @@
 import styles from "./card.module.scss";
-import open from "./icons/open.png";
-import favorite from "./icons/favorito.png";
+import assets from "./assets.json";
 
 const Card = ({ image, title, credits }) => {
   return (
@@ -15,8 +14,9 @@ const Card = ({ image, title, credits }) => {
       <div>
         <p>{credits}</p>
         <span>
-          <img src={favorite} alt="icone corção curtir" />
-          <img src={open} alt="icone de abrir modal" />
+          {assets.map((asset) => (
+            <img {...asset} />
+          ))}
         </span>
       </div>
     </li>

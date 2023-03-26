@@ -1,17 +1,17 @@
-import { logo, search } from "./images";
+import images from "./images.json";
 import styles from "./header.module.scss";
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <img src={logo} alt="Logo do alura space" />
+      <img {...images[0]} />
       <div className={styles.header__container}>
         <input
           className={styles.header__input}
           placeholder="O que você procura?"
           type="text"
         />
-        <img src={search} alt="icone de lupa" />
+        <img {...images[1]} />
       </div>
     </header>
   );

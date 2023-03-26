@@ -1,4 +1,3 @@
-import banner from "./banner.png";
 import styles from "./banner.module.scss";
 
 const Banner = () => {
@@ -7,7 +6,12 @@ const Banner = () => {
       <h1 className={styles.banner__title}>
         A galeria mais completa de fotos do espaço
       </h1>
-      <img src={banner} alt="banner" className={styles.banner__image} />
+      <img
+        src="/assets/images/other/banner.png"
+        alt="banner"
+        title="banner"
+        className={styles.banner__image}
+      />
     </div>
   );
 };
