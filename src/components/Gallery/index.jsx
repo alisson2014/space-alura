@@ -1,25 +1,25 @@
+import { useState } from "react";
 import styles from "./gallery.module.scss";
-import Tags from "../Tags";
 import photos from "./photos.json";
-import Card from "../Card";
+import Tags from "../Tags";
+import Cards from "../Cards";
 
 const Gallery = () => {
+  const [items, setItems] = useState(photos);
+  const tags = [...new Set(photos.map((photo) => photo.tag))];
+
+  const filterPhotos = (tag) => {
+    const newPhotos = photos.filter((photo) => {
+      return tag === photo.tag;
+    });
+    setItems(newPhotos);
+  };
+
   return (
     <section className={styles.gallery}>
       <h2>Navegue pela galeria</h2>
-      <Tags />
-      <ul className={styles.gallery__cards}>
-        {photos.map((photo) => {
-          return (
-            <Card
-              key={photo.id}
-              image={photo.image}
-              title={photo.title}
-              credits={photo.credits}
-            />
-          );
-        })}
-      </ul>
+      <Tags tags={tags} filtered={filterPhotos} setItems={setItems} />
+      <Cards items={items} />
     </section>
   );
 };
